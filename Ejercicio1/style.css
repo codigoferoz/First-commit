@@ -1,0 +1,85 @@
+html, body{    
+    padding:0;
+    margin:0;
+}
+
+#wrapper {
+    display: flex;
+}
+
+.element {   
+    flex: 0 0 500px;
+    padding: 10% 0;
+    height: 600px;
+    background: #ffffff; 
+    font-family: Raleway;   
+}
+
+.element2 {    
+    flex: 1;
+    height: 600px;
+    background: #38ce40;
+    /* Photo by Alesia Kazantceva */
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;        
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #15d199;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  b {
+      color: #15d199;
+  }
+
+  .info {
+    font-weight: bold;
+  }
+
+  .forgot {
+       
+    text-align:left;
+    color: #15d199;
+  } 
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  #login {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+  
+
+@media screen and (max-width: 600px) {
+    .element2 {
+    display:none;
+    }
+}
