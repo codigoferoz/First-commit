@@ -1,40 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+<link rel="stylesheet" href="style.css">
+    <title>OTRO</title>
 </head>
-<body> 
-    <div id="wrapper">   
-        <div class="element">            
-            <div id="login">
-                <form action="/action_page.php">
-                    <h2> Open Bootcamp <b> | Alumnos </b></h2>
-                  <label class="info" for="fname">Email</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Introduce tu email">
-              
-                  <label class="info" for="lname">Contraseña</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Introduce tu contraseña">
-                  <div>
-                      <input type="checkbox">
-                      <label for="rememberMe">Recuérdame</label>
-                      <label class="forgot">He olvidado la contraseña</label>
-                  </div>
-              
-                  <input type="submit" value="Iniciar sesión">
-                </form>
-              </div>
-        </div>
-        <div class="element2">        
+<div class="container">
+  <main id="login" class="column-one">
+    <div class="inner">
+      <header>
+        
+        <h1> Open Bootcamp <b> | Alumnos </b></h1>
+        
+      </header>
+
+      <form class="login-form" action="" method="POST">
+        <p>
+          <label for="email">Email Address</label>
+          <input type="text" placeholder="me@example.com" name="email" id="login-email" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus tabindex="1">
+        </p>
+
+        <p>
+          <label for="password">Password <a href="#" id="toggle-password"></a></label>
+          <input type="password" name="password" id="login-password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="2">
+        </p>
+        <div class="check-wrap">
+            <input type="checkbox" class="checkbox">
+            <label>Recuérdame</label>
+            <a href="#">He olvidado la contraseña</a>
+        </div> 
+
+
+        <input type="submit" value="Sign in" tabindex="3">
+      </form>
+
+      
     </div>
-</div>
+
+    <footer class="login-footer">
+      <p>Copyright © 2021 Open Bootcamp SL, Imagina Group</p>
+      <p>Todos los derechos reservados.</p>
+      <p>Política de Privacidad.</p>
+    </footer>
+  </main>
+
+  <aside id="login-image" class="column-two"></aside> 
+
+  <div class="clear"></div>
+</div> <!-- /Container -->
+
 </body>
 </html>
