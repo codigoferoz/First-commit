@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body> 
+    <a class="active" href="#home"><i class="fa fa-long-arrow-left"></i> Volver</b></a>      
+    
+    <div id="imagenav" class="dropdown">        
+        <img src="img_avatar.png" alt="Avatar" class="avatar"> 
+        <button id="btn02" class="dropbt">UserName <i class="fa fa-angle-down"></i></button>
+        <div class="dropdown-content"><a href="#home">Logout</a>          
+        </div>
+    </div>     
+    
+    <div class="row">
+        <div class="column1">
+            <div>
+                <div class="container">
+                    <img src="img_avatar2.png" alt="Avatar" id="avatar2">
+                    <p id="principal">Nombre Alumno</p>
+                    <p id="secundario"><i class="fa fa-map-marker"></i> Valencia | España</p>                    
+                </div>              
+
+                <form id="filtersForm">
+                    <form name="message" method="post">
+                        <section>
+                            
+                            <div style="float:left;margin-right:20px; padding-bottom: 20px;">
+                                <label>Nombre y Apellidos</label>
+                                <input type="text" id="country" placeholder="Nombre Alumno">
+                            </div>
+                            <br style="clear:both;" />
+                    
+                            <div style="float:left;margin-right:20px; padding-bottom: 20px;">
+                                <label for="name">Nº Teléfono</label>
+                                <input id="name" type="text" placeholder="+34 654 85 52 48">
+                            </div>
+                            
+                            <div style="float:left; padding-bottom: 20px;">
+                                <label for="email">Email</label>
+                                <input id="email" type="text" placeholder="nombre@gmail.com">
+                            </div>
+                            <br style="clear:both;" />
+
+                            <div style="float:left;width: 212px; padding-bottom: 20px;">
+                                <label for="name">País</label>
+                                <select name="pais" id="pais" style="background-color: white;">
+                                    <option value="USA">USA</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Argentine">Argentine</option>
+                                    <option value="Brazil">Brazil</option>
+                                </select>
+                            </div>
+
+                            <div style="float:left;margin-right:20px; width: 212px; padding-bottom: 20px;">
+                                <label for="email">Ciudad</label>
+                                <select style="background-color: white;">
+                                    <option value="Chicago">Chicago</option>
+                                    <option value="Valencia">Valencia</option>
+                                    <option value="Buenos Aires">Buenos Aires</option>
+                                    <option value="Sao Paulo">Sao Paulo</option>
+                                </select>
+                            </div>
+                            <br style="clear:both;" />
+
+                            <div style="float:left;margin-right:20px; width: 212px; padding-bottom: 20px;">
+                                <label for="email">Traslado</label>
+                                <select name="pais" id="pais" style="background-color: white;">
+                                    <option value="Sí">Sí</option>
+                                    <option value="No">No</option>  
+                                </select>
+                            </div>
+
+                            <div style="float:left;width: 212px; padding-bottom: 20px;">
+                                <label for="name">Presencialidad</label>
+                                <select name="pais" id="pais" style="background-color: white;">
+                                    <option value="Presencial">Presencial</option>
+                                    <option value="En Remoto">En Remoto</option>  
+                                </select>
+                            </div>
+                            <br style="clear:both;" />
+                            
+                        </section>
+                        
+                        <section>
+                            <div style="float:left;width: 160px; padding-bottom: 5px;">
+                                <label for="subject">Documento CV</label>                    
+                                <button class="button"><i class="fa fa-cloud-upload"></i> Subir de nuevo</button>
+                            </div>
+                            <div style="float:left;width: 212px; padding-top: 14px;">                                       
+                                <button class="button2"><i class="fa fa-trash-o"></i> Borrar</button>
+                            </div>
+                        </section>
+                    </form>
+                    <br style="clear:both;" />
+
+                    <label for="fname">Etiquetas</i></label>
+                    <input type="text" id="tag-input1">
+                    
+                        <script>
+                            var tagInput1 = new TagsInput({
+                                selector: 'tag-input1',
+                                duplicate : false,
+                                max : 10
+                            });
+
+                            tagInput1.addData(["HTML&CSS","REACT","ANGULAR"])
+                        
+                        </script>
+                </form>
+            </div>
+        </div>
+            
+        <div class="column2">
+            <iframe src="functionalSample.pdf" width="100%" height="1000px">
+            </iframe>
+        </div>
+
+    </div>   
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.5/js/jquery.tablesorter.min.js'></script>
+    
+</body>
+</html>
