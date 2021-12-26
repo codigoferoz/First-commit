@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Adrian Lopez" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>First Commit</title>
+  <link rel="stylesheet" href="student_list_style.css">
+</head>
+  <body>
+
+    <!-- navbar -->
+    <div class="topnav">
+      <a class="active" href="#home">Open Bootcamp <b> | Alumnos </b></a>      
+      <div id="imagenav" class="dropdown">        
+        <img src="img_avatar.png" alt="Avatar" class="avatar"> 
+        <button id="btn02" class="dropbt">UserName <i class="fa fa-angle-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#home">Logout</a>          
+        </div>
+      </div> 
+    </div> 
+    
+    <!-- modal -->
+    <div class="container-list">
+      <main id="list" class="column-list-one">        
+        <div class="inner">
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+
+              <div class="imgcontainer">
+
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
+
+              </div>
+
+              <div id="contr01" class="container">
+
+                <label for="uname"><b>Username</b></label>
+                <input id="uname"type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input id="psw"type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Login</button>
+                
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+              </div>
+              
+              <div id="contr01" class="container" style="background-color:#f1f1f1">
+                <button id="btn01" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+
+            </form>
+          </div>
+        </header>
+
+        <!-- students table -->
+        <div class="topnav_row">
+
+          <a class="active" href="#home">Alumnos</a> 
+          <button type="submit"><i class="fa fa-search"></i></button>              
+          <input id="searchstudent" type="text" placeholder="Buscar por Nombre, Email o Palabra clave.." name="search">
+            
+          <button id="btn01" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">+ Añadir Alumnos</button>
+
+        </div>
+
+        </div>          
+          <div class="row">
+            <table id="tablesort" class="table" data-sort="table">
+              
+              <thead>
+                <tr>
+                  <th>Nombre ↑↓</th>
+                  <th>Ciudad ↑↓</th>
+                  <th>País ↑↓</th>
+                  <th>Teléfono ↑↓</th>
+                  <th>Correo electrónico ↑↓</th>
+                  <th>Etiquetas ↑↓</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Chicago</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>johndoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Jeane Doe</td>
+                  <td>Texas</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>jeandoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Juan Pérez</td>
+                  <td>Buenos Aires</td>
+                  <td>Argentina</td>
+                  <td>+2156789234</td>
+                  <td>juanperez@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>johndoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Jeane Doe</td>
+                  <td>Texas</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>jeandoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Juan Pérez</td>
+                  <td>Buenos Aires</td>
+                  <td>Argentina</td>
+                  <td>+2156789234</td>
+                  <td>juanperez@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>Chicago</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>johndoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Jeane Doe</td>
+                  <td>Texas</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>jeandoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Juan Pérez</td>
+                  <td>Buenos Aires</td>
+                  <td>Argentina</td>
+                  <td>+2156789234</td>
+                  <td>juanperez@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>John Doe</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>johndoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Jeane Doe</td>
+                  <td>Texas</td>
+                  <td>USA</td>
+                  <td>+2156789234</td>
+                  <td>jeandoe@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+                <tr>
+                  <td>Juan Pérez</td>
+                  <td>Buenos Aires</td>
+                  <td>Argentina</td>
+                  <td>+2156789234</td>
+                  <td>juanperez@gmail.com</td>
+                  <td>HTMLx PHPx CSSx</td>
+                </tr>
+              </tbody>
+            </table>
+
+              <!-- filters area -->
+              <div class="column-filters"> 
+                <div id="clearfilter">
+                  <h4>Filtros de búsqueda </h4>                
+                  <button id="btn02" onclick="document.getElementById('filtersForm').reset();window.location.reload()"><i class="fa fa-trash-o" style="font-size:24px;color:green"></i></button>              
+              </div>
+                <div>
+                  <form id="filtersForm">
+                    <label for="fname">Etiquetas></i></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Agrega una etiqueta">
+                    <textarea id="w3review" name="w3review" rows="4" cols="50">
+                      PHPx HTMLx CSSx
+                      </textarea>
+                
+                    <label for="country">País</label>
+                    <input type="text" id="country">
+
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city">
+
+                    <a>Presencial / A distancia</a><br>
+                    <input type="checkbox" id="presence1" name="presence1" value="Presencial">
+                    <label for="presence1"> Presencial</label><br>
+                    <input type="checkbox" id="presence2" name="presence2" value="EnRemoto">
+                    <label for="presence2"> En Remoto</label><br>
+
+                    <a>Posibilidad traslado</a><br>
+                    <input type="checkbox" id="move1" name="move1" value="Si">
+                    <label for="move1"> Sí</label><br>
+                    <input type="checkbox" id="move2" name="move2" value="No">
+                    <label for="move2"> No</label><br>
+
+                  </form>
+                </div>                     
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.26.5/js/jquery.tablesorter.min.js'></script>
+        <script  src="./script.js"></script>
+    
+    </body>
+</html>
