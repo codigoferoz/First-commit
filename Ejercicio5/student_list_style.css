@@ -1,0 +1,424 @@
+*, *:after {
+    box-sizing: border-box;
+}
+
+html, body, .container-list {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+body {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-rendering: optimizeLegibility;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.topnav {
+  padding-right: 30px;
+  background-color: rgba(255, 255, 255, 0.267);
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav #test {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#test {
+  vertical-align: middle;
+}
+
+#imagenav {
+  text-align: right;
+}
+
+.avatar {
+  width: 2%;
+  border-radius: 50%;
+  vertical-align: middle; 
+  
+}
+
+h3 {
+    color: black;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.2;
+    margin: 20px 0 0 20;
+    
+}
+
+b {
+    color: #32D4A4;
+    font-weight: 800;
+}
+
+.container-list:after {
+    clear: both;
+    display: block;
+    content: ''
+}
+
+
+header p a {
+    display: block;
+
+}
+
+.inner {
+    padding: 24px;
+    text-align: left;
+    position: relative
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column-students {
+  flex: 80%;
+  padding: 5px;
+}
+
+.column-filters {
+  flex: 20%;
+  padding: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0;
+  width: 100%;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+th {
+  text-align: left;
+  padding-left: 0;
+  color: grey;
+  font-size: medium;
+}
+
+td {
+  text-align: left;
+  padding: 16px;
+  font-weight: 800;
+  font-size: medium;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.column-students th:hover {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+}
+
+#searchstudent {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: rgb(229, 238, 237);
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+}
+
+div {
+  border-radius: 5px;  
+  background-color: #f2f2f2;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+h4 {
+  display: inline-block;
+}
+
+#btn02 {
+  border: none;
+  cursor: pointer;
+}
+
+#btn02:hover {
+  opacity: .8;
+} 
+
+#country, #city {  
+  background-color: #f2f2f2;  
+}
+
+label, a {
+  font-weight: 800;
+  font-size: small;
+}
+
+label[for=presence1], label[for=presence2], label[for=move1], label[for=move2], #city, #country {
+  font-weight: 200;
+  font-size: small;
+  color: grey;
+}
+
+.topnav_row {
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+  padding: 14px 16px;
+
+}
+
+.topnav_row a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav_row a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav_row a.active {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav_row #name {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav_row button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ffffff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav_row  button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav_row {
+    float: none;
+  }
+  .topnav_row a, .topnav_row #name, .topnav_row button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav_row #name {
+    border: 1px solid #ccc;  
+  }
+}
+
+/* MODAL */
+
+/* Full-width input fields */
+#uname, #psw {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for modal button */
+#btn01 {  
+  color: black;
+  padding: 1px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: medium;
+}
+
+#btn01:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+#contr01 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
